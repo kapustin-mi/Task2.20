@@ -16,21 +16,21 @@ public class Main {
     private static int readNumberN() {
         System.out.print("Введите значение N (от 6 до 14): ");
         Scanner scn1 = new Scanner(System.in);
-        int value1;
+        int value;
 
         while(!scn1.hasNextInt()) {
             System.out.print("Недопустимое значение! Пожалуйста, попробуйте снова: ");
             scn1.next();
         }
-        value1 = scn1.nextInt();
+        value = scn1.nextInt();
 
-        while(value1 < 6 | value1 > 16) {
+        while(value < 6 | value > 16) {
             System.out.print("Недопустимое значение! N должно быть от 6 до 14. ");
             System.out.println("Пожалуйста, попробуйте снова.");
             return readNumberN();
         }
 
-        return value1;
+        return value;
     }
 
     private static int readNumberM() {
