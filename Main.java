@@ -15,12 +15,12 @@ public class Main {
 
     private static int readNumberN() {
         System.out.print("Введите значение N (от 6 до 14): ");
-        Scanner scn1 = new Scanner(System.in);
+        Scanner scn = new Scanner(System.in);
         int value;
 
-        while(!scn1.hasNextInt()) {
+        while(!scn.hasNextInt()) {
             System.out.print("Недопустимое значение! Пожалуйста, попробуйте снова: ");
-            scn1.next();
+            scn.next();
         }
         value = scn1.nextInt();
 
