@@ -22,9 +22,9 @@ public class Main {
             System.out.print("Недопустимое значение! Пожалуйста, попробуйте снова: ");
             scn.next();
         }
-        value = scn1.nextInt();
+        value = scn.nextInt();
 
-        while(value < 6 | value > 16) {
+        while(value < 6 || value > 14) {
             System.out.print("Недопустимое значение! N должно быть от 6 до 14. ");
             System.out.println("Пожалуйста, попробуйте снова.");
             return readNumberN();
@@ -44,7 +44,7 @@ public class Main {
         }
         value = scn.nextInt();
 
-        while(value < 1 | value > 4) {
+        while(value < 1 || value > 4) {
             System.out.print("Недопустимое значение! M должно быть от 1 до 4. ");
             System.out.println("Пожалуйста, попробуйте снова.");
             return readNumberM();
